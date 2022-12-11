@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TUTORIALS</title>
+  </head>
+  <!--  -->
+  <header class="nav">
+    <div class="registration">
+      <h6>REGISTRACIJA</h6>
+      <input type="email" id="regEmail" placeholder="type email" />
+      <input id="regPassword" placeholder="type password" type="password" />
+      <input id="registration" type="submit" value="REGISTRUOTIS" />
+    </div>
+    <div class="login">
+      <h6>LOGIN</h6>
+      <input type="email" required id="loginEmail" placeholder="type email" />
+      <input id="loginPassword" placeholder="type password" type="password" />
+      <input id="login" type="submit" value="PRISIJUNGTI" />
+    </div>
+  </header>
+  <!--  -->
+  <body>
+    <!--  -->
+    <div class="btn">
+      <button onclick="window.location.href='#private';">
+        Sukurti TUTORIAL
+      </button>
+      <button onclick="myTutor()">Mano TUTORIAL</button>
+      <button onclick="logedTutor()">Visi TUTORIAL</button>
+      <button onclick="logOut()">Atsijungti</button>
+    </div>
+    <!--  -->
+    <div id="tutorHeader"></div>
+    <div id="tasksList"></div>
+    <div class="container">
+      <!-- create tutorial -->
+      <div class="createTut">
+        <hr />
+        <h4>Create tutorial</h4>
+
+        <input id="title" type="text" placeholder="Tilte" />
+        <br />
+        <br />
+        <textarea
+          name="content"
+          id="content"
+          cols="30"
+          rows="5"
+          placeholder="Content"
+        ></textarea>
+        <br />
+        <form>
+          <input type="checkbox" id="private" />
+          <label for="private">Private massagge</label>
+        </form>
+        <br />
+        <button type="submit" value="submit" id="submit">Pateikti</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

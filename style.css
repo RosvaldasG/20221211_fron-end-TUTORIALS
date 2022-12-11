@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+}
+
+.th {
+  text-align: center;
+  margin: 10px;
+  color: red;
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.content {
+  text-align: center;
+}
+
+.article {
+  margin-top: 10px;
+}
+
+.btnList {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: auto;
+}
+
+.createTut {
+  align-items: center;
+  margin: 0 auto;
+}
